@@ -1,0 +1,79 @@
+.web3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.web3-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    text-align: center;
+}
+
+.web3-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web3-input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+}
+
+.web3-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.web3-btn:hover {
+    background-color: #2980b9;
+}
+
+.web3-wallet-info {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    color: #34495e;
+}
+
+.web3-wallet-info p {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.web3-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}

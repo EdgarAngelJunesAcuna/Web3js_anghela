@@ -1,0 +1,33 @@
+<div class="web3-container">
+  <h1>Conexión Segura con MetaMask</h1>
+  <div class="web3-card">
+      <div class="web3-card-content">
+          <!-- Input para la cuenta del remitente -->
+          <label for="senderAccount">Cuenta de Remitente:</label>
+          <input id="senderAccount" (input)="onSenderInputChange($event)" placeholder="Introduce la dirección del remitente" class="web3-input" />
+          <p *ngIf="senderName"><strong>Remitente:</strong> {{ senderName }}</p>
+
+          <!-- Input para la cuenta del destinatario -->
+          <label for="recipientAccount">Cuenta de Destinatario:</label>
+          <input id="recipientAccount" (input)="onRecipientInputChange($event)" placeholder="Introduce la dirección del destinatario" class="web3-input" />
+          <p *ngIf="recipientName"><strong>Destinatario:</strong> {{ recipientName }}</p>
+
+          <!-- Input para el monto de la transferencia -->
+          <label for="transferAmount">Monto a Transferir (ETH):</label>
+          <input id="transferAmount" (input)="onAmountInputChange($event)" placeholder="Introduce el monto en ETH" class="web3-input" />
+
+          <button (click)="connectMetaMask()" class="web3-btn">Conectar MetaMask</button>
+
+          <!-- Mostrar la información de la cuenta si está disponible -->
+          <div *ngIf="account" class="web3-wallet-info">
+              <p><strong>Cuenta Conectada:</strong> {{ account }}</p>
+              <p><strong>Saldo:</strong> {{ balance }} ETH</p>
+          </div>
+
+          <!-- Mostrar el mensaje si está disponible -->
+          <div *ngIf="connectionMessage" class="web3-message">
+              <p>{{ connectionMessage }}</p>
+          </div>
+      </div>
+  </div>
+</div>
